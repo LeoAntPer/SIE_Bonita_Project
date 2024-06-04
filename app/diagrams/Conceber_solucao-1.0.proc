@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:connectorconfiguration="http://www.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_MJpicB0JEe-wwLkYj99nvQ" name="Conceber_solucao" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_MJpicR0JEe-wwLkYj99nvQ" name="Conceber a Solução">
-      <elements xmi:type="process:Lane" xmi:id="_MJpich0JEe-wwLkYj99nvQ" name="Gestor OV" actor="_MJpiix0JEe-wwLkYj99nvQ">
+      <elements xmi:type="process:Lane" xmi:id="_MJpich0JEe-wwLkYj99nvQ" name="Gestor OV" actor="_IfqIQCKAEe-hF5ts4rL8SA">
         <elements xmi:type="process:StartMessageEvent" xmi:id="_g28Q4B0JEe-wwLkYj99nvQ" name="Conceber solução" outgoing="_MJpiiB0JEe-wwLkYj99nvQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_MJpidB0JEe-wwLkYj99nvQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_MJpidR0JEe-wwLkYj99nvQ" name="" content="" returnTypeFixed="true"/>
@@ -206,8 +206,15 @@
           <contract xmi:type="process:Contract" xmi:id="_iVtSgSJ7Ee-K9NOFx4MuYQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_iVtShCJ7Ee-K9NOFx4MuYQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
+        <filters xmi:type="process:ActorFilter" xmi:id="_xHQpACKAEe-hF5ts4rL8SA" name="Utilizador que concebe a solução" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_xHQpASKAEe-hF5ts4rL8SA" definitionId="bonita-actorfilter-initiator" version="1.0">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_xHQpAiKAEe-hF5ts4rL8SA" key="autoAssign">
+              <expression xmi:type="expression:Expression" xmi:id="_xHQpAyKAEe-hF5ts4rL8SA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+            </parameters>
+          </configuration>
+        </filters>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_VEyRcB0JEe-wwLkYj99nvQ" name="Equipa Técnica">
+      <elements xmi:type="process:Lane" xmi:id="_VEyRcB0JEe-wwLkYj99nvQ" name="Equipa Técnica" actor="__SWrMCJ_Ee-hF5ts4rL8SA">
         <elements xmi:type="process:Task" xmi:id="_ty458B25Ee-gZr0NkXqK5g" name="Apoio na conceção da solução" outgoing="_x4Hp8B25Ee-gZr0NkXqK5g" incoming="_tGo38B25Ee-gZr0NkXqK5g" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_tGnp0R25Ee-gZr0NkXqK5g" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_tGnp0B25Ee-gZr0NkXqK5g" name="" content="" returnTypeFixed="true"/>
@@ -268,8 +275,15 @@
           <contract xmi:type="process:Contract" xmi:id="_0eJbkx26Ee-gZr0NkXqK5g"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_0eJblh26Ee-gZr0NkXqK5g" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
+        <filters xmi:type="process:ActorFilter" xmi:id="_2Q-74CKAEe-hF5ts4rL8SA" name="Utilizador que apoia na concessão da solução" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_2Q-74SKAEe-hF5ts4rL8SA" definitionId="bonita-actorfilter-initiator" version="1.0">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2Q-74iKAEe-hF5ts4rL8SA" key="autoAssign">
+              <expression xmi:type="expression:Expression" xmi:id="_2Q-74yKAEe-hF5ts4rL8SA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+            </parameters>
+          </configuration>
+        </filters>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_VTusYB0JEe-wwLkYj99nvQ" name="Serviços de Apoio ao Negócio (área logística)">
+      <elements xmi:type="process:Lane" xmi:id="_VTusYB0JEe-wwLkYj99nvQ" name="Serviços de Apoio ao Negócio (área logística)" actor="_NiFgUCKAEe-hF5ts4rL8SA">
         <elements xmi:type="process:Task" xmi:id="_7W0ZAB25Ee-gZr0NkXqK5g" name="Apoio na coordenação de recursos" outgoing="_AscZ4R26Ee-gZr0NkXqK5g" incoming="_5vRzcB25Ee-gZr0NkXqK5g" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_5vQlUR25Ee-gZr0NkXqK5g" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_5vQlUB25Ee-gZr0NkXqK5g" name="" content="" returnTypeFixed="true"/>
@@ -285,8 +299,15 @@
           <contract xmi:type="process:Contract" xmi:id="_7W1nKB25Ee-gZr0NkXqK5g"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_7W2OMB25Ee-gZr0NkXqK5g" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
+        <filters xmi:type="process:ActorFilter" xmi:id="_9vfU0CKAEe-hF5ts4rL8SA" name="Utilizador que fornece recursos para a solução" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_9vfU0SKAEe-hF5ts4rL8SA" definitionId="bonita-actorfilter-initiator" version="1.0">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_9vfU0iKAEe-hF5ts4rL8SA" key="autoAssign">
+              <expression xmi:type="expression:Expression" xmi:id="_9vfU0yKAEe-hF5ts4rL8SA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+            </parameters>
+          </configuration>
+        </filters>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_Vkvj4B0JEe-wwLkYj99nvQ" name="Serviços de Apoio ao Negócio (área comercial)">
+      <elements xmi:type="process:Lane" xmi:id="_Vkvj4B0JEe-wwLkYj99nvQ" name="Serviços de Apoio ao Negócio (área comercial)" actor="_VVkDsCKAEe-hF5ts4rL8SA">
         <elements xmi:type="process:Task" xmi:id="_BTrZAB26Ee-gZr0NkXqK5g" name="Apoio na coordenação de recursos" outgoing="_IQ1YYB26Ee-gZr0NkXqK5g" incoming="_AscZ4R26Ee-gZr0NkXqK5g" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Asby0R26Ee-gZr0NkXqK5g" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Asby0B26Ee-gZr0NkXqK5g" name="" content="" returnTypeFixed="true"/>
@@ -302,6 +323,13 @@
           <contract xmi:type="process:Contract" xmi:id="_BTsAGB26Ee-gZr0NkXqK5g"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_BTsAGx26Ee-gZr0NkXqK5g" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
+        <filters xmi:type="process:ActorFilter" xmi:id="_-18mkCKAEe-hF5ts4rL8SA" name="Utilizador que fornece recursos para a solução" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_-18mkSKAEe-hF5ts4rL8SA" definitionId="bonita-actorfilter-initiator" version="1.0">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-18mkiKAEe-hF5ts4rL8SA" key="autoAssign">
+              <expression xmi:type="expression:Expression" xmi:id="_-18mkyKAEe-hF5ts4rL8SA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+            </parameters>
+          </configuration>
+        </filters>
       </elements>
       <formMapping xmi:type="process:FormMapping" xmi:id="_MJpihB0JEe-wwLkYj99nvQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_MJpihR0JEe-wwLkYj99nvQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -413,7 +441,10 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_5bGgwSJ7Ee-K9NOFx4MuYQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_5bGgwiJ7Ee-K9NOFx4MuYQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_MJpiix0JEe-wwLkYj99nvQ" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="__SWrMCJ_Ee-hF5ts4rL8SA" name="Equipa Técnica"/>
+      <actors xmi:type="process:Actor" xmi:id="_IfqIQCKAEe-hF5ts4rL8SA" name="Gestor da OV"/>
+      <actors xmi:type="process:Actor" xmi:id="_NiFgUCKAEe-hF5ts4rL8SA" name="Serviços de Apoio ao Negócio (área logística)"/>
+      <actors xmi:type="process:Actor" xmi:id="_VVkDsCKAEe-hF5ts4rL8SA" name="Serviços de Apoio ao Negócio (área comercial)"/>
       <contract xmi:type="process:Contract" xmi:id="_MJpijB0JEe-wwLkYj99nvQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_MJpijR0JEe-wwLkYj99nvQ">
         <name xmi:type="expression:Expression" xmi:id="_MJpijh0JEe-wwLkYj99nvQ" content="" returnTypeFixed="true"/>
