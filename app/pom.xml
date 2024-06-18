@@ -112,12 +112,6 @@
       <version>1.0.0</version>
     </dependency>
     <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>conceber_solucao-bdm-model</artifactId>
-      <version>${project.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
       <groupId>org.bonitasoft.connectors</groupId>
       <artifactId>bonita-connector-email</artifactId>
       <version>1.4.1</version>
