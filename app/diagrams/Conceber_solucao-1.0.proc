@@ -97,6 +97,15 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_L5hy0R25Ee-gZr0NkXqK5g" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_L5hy0B25Ee-gZr0NkXqK5g" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_L5hy0h25Ee-gZr0NkXqK5g" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_pAOboC5hEe-SvPntKcWM0A">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_pAPCsC5hEe-SvPntKcWM0A" name="oportunidadeDeVenda" content="oportunidadeDeVenda" type="TYPE_VARIABLE" returnType="com.company.model.OportunidadeDeVenda">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mnr6IC5lEe-SvPntKcWM0A" name="oportunidadeDeVenda" dataType="_MJpipB0JEe-wwLkYj99nvQ" className="com.company.model.OportunidadeDeVenda"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_pAPCsS5hEe-SvPntKcWM0A" name="Estes sao os requisitos: vai dar uma volta" content="Estes sao os requisitos: vai dar uma volta"/>
+            <operator xmi:type="expression:Operator" xmi:id="_pAPCsi5hEe-SvPntKcWM0A" type="JAVA_METHOD" expression="setRequisitos">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_L5hy0x25Ee-gZr0NkXqK5g" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_L5hy1B25Ee-gZr0NkXqK5g" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_L5hy1R25Ee-gZr0NkXqK5g" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
