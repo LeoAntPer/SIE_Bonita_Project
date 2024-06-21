@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "df989171-bbc0-4ef6-965a-1919c6b9266d",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718992967569,
+  "lastUpdate" : 1719000090958,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -215,48 +215,17 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
+                        "disabled" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Email"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "email.email"
                         },
                         "required" : {
                           "type" : "constant",
@@ -266,33 +235,46 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "minLength" : {
+                        "labelHidden" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : false
                         },
-                        "maxLength" : {
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Fornecedores"
+                        },
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : "top"
                         },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
+                        "labelWidth" : {
                           "type" : "constant",
                           "value" : 1
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Selecione um fornecedor"
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "fornecedores"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant",
+                          "value" : "email"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant",
+                          "value" : "email"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "emailMessage.recepient"
                         }
                       },
-                      "reference" : "d5e7d9b5-6b2c-49b0-9f95-e1b068b05770",
+                      "reference" : "ebdcf676-06c4-4941-b4cd-5163ef5ae7f8",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
+                      "id" : "pbSelect"
                     }
                   ],
                   [
@@ -339,7 +321,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Email_data"
+                          "value" : "Email message"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -351,7 +333,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "email.email_data"
+                          "value" : "emailMessage.message"
                         }
                       },
                       "reference" : "8090f7bd-3677-459e-aab4-425cbd336809",
@@ -563,6 +545,13 @@
       "type" : "url",
       "value" : [
         "../{{context.oportunidadeDeVenda_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "fornecedores" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.Fornecedor/findByIds?ids=1,2"
       ],
       "exposed" : false
     }
