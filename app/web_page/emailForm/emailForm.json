@@ -2,9 +2,9 @@
   "id" : "emailForm",
   "name" : "emailForm",
   "type" : "form",
-  "uuid" : "df989171-bbc0-4ef6-965a-1919c6b9266d",
+  "uuid" : "4b9d7d22-8411-4d57-b0a5-5dc829cd012c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1719000090958,
+  "lastUpdate" : 1719091932605,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "c5f9a586-703d-4c00-b90f-dac7c9064ead",
+        "reference" : "b6209db7-fe57-4a31-ad0f-9df0e6e3543b",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "4974a451-93f9-4909-ac3f-dd86525ee677",
+              "reference" : "f7b538df-54c6-4a92-b7ed-7d993a96b69c",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "11793131-96cc-44b5-abab-a3973d9f09e9",
+              "reference" : "fdb9b53b-7ae6-434d-806f-a4b8225ae06e",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -117,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "9e12b090-3247-4aaf-9dcc-46965987a8fd",
+        "reference" : "6e95517e-1bff-41c5-97b0-cc00a3e5e955",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "3cfd49be-cf8b-47d7-96f4-862ace03459f",
+          "reference" : "bd55a225-6bde-44ec-8f20-15da5f7114fc",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -169,10 +169,62 @@
                     "value" : false
                   }
                 },
-                "reference" : "943b5bc1-13e2-4bca-9acd-a7158bff8087",
+                "reference" : "5f76c3fd-28db-46ea-8709-304eb603f795",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Solução:"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "{{ opotunidadeDeVenda.solucao }}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "c336231c-0c46-42ca-8a1a-8f8393e113a0",
+                "hasValidationError" : false,
+                "id" : "pbText"
               }
             ],
             [
@@ -201,7 +253,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "27477f88-e383-4811-9e98-76d023ece3c4",
+                "reference" : "6fc938d3-6ac4-49ad-860e-afe07b6f2f4e",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -215,66 +267,84 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "cssClasses" : {
+                        "labelHidden" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Fornecedores"
-                        },
                         "labelPosition" : {
                           "type" : "constant",
                           "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
                         },
                         "labelWidth" : {
                           "type" : "constant",
                           "value" : 1
                         },
-                        "placeholder" : {
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
                           "type" : "interpolation",
-                          "value" : "Selecione um fornecedor"
+                          "value" : "Email"
                         },
-                        "availableValues" : {
-                          "type" : "expression",
-                          "value" : "fornecedores"
+                        "placeholder" : {
+                          "type" : "constant"
                         },
-                        "displayedKey" : {
+                        "type" : {
                           "type" : "constant",
-                          "value" : "email"
+                          "value" : "text"
                         },
-                        "returnedKey" : {
+                        "dimension" : {
                           "type" : "constant",
-                          "value" : "email"
+                          "value" : 12
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "emailMessage.recepient"
+                          "value" : "emailMessage.email"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "ebdcf676-06c4-4941-b4cd-5163ef5ae7f8",
+                      "reference" : "4f0dbae5-0c48-4a45-8091-00e4c33119f7",
                       "hasValidationError" : false,
-                      "id" : "pbSelect"
+                      "id" : "pbInput",
+                      "description" : ""
                     }
                   ],
                   [
@@ -301,7 +371,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "allowHTML" : {
                           "type" : "constant",
@@ -321,7 +391,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Email message"
+                          "value" : "Message"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -336,7 +406,7 @@
                           "value" : "emailMessage.message"
                         }
                       },
-                      "reference" : "8090f7bd-3677-459e-aab4-425cbd336809",
+                      "reference" : "a5c4c493-167e-4559-8760-bced5a8a8765",
                       "hasValidationError" : false,
                       "id" : "pbTextarea"
                     }
@@ -419,7 +489,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "1b193152-993f-45e1-ac0e-ae198c3b2aec",
+                "reference" : "1b8c6706-39c2-4f3b-98cb-9d2b3ea2901c",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -471,7 +541,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "f220da1a-799c-4ceb-8861-90ee55764798",
+                "reference" : "3a1c8a30-a259-4f71-884d-5b60e3000c7c",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -487,6 +557,13 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "emailMessage" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.emailMessage_ref.link}}"
       ],
       "exposed" : false
     },
@@ -508,12 +585,12 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.email ){",
+        "if( $data.emailMessage ){",
         "\treturn {",
-        "\t\t//map email variable to expected task contract input",
-        "\t\temailInput: {",
-        "\t\t\temail_data: $data.email.email_data !== undefined ? $data.email.email_data : null,",
-        "\t\t\temail: $data.email.email !== undefined ? $data.email.email : null",
+        "\t\t//map emailMessage variable to expected task contract input",
+        "\t\temailMessageInput: {",
+        "\t\t\tmessage: $data.emailMessage.message !== undefined ? $data.emailMessage.message : null,",
+        "\t\t\temail: $data.emailMessage.email !== undefined ? $data.emailMessage.email : null",
         "\t\t}",
         "\t}",
         "}"
@@ -534,38 +611,24 @@
       ],
       "exposed" : false
     },
-    "email" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.email_ref.link}}"
-      ],
-      "exposed" : false
-    },
     "oportunidadeDeVenda" : {
       "type" : "url",
       "value" : [
         "../{{context.oportunidadeDeVenda_ref.link}}"
       ],
       "exposed" : false
-    },
-    "fornecedores" : {
-      "type" : "url",
-      "value" : [
-        "../API/bdm/businessData/com.company.model.Fornecedor/findByIds?ids=1,2"
-      ],
-      "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "88e29fad-a617-42f8-a9fa-9432c7b43f76",
+      "id" : "7fe42ef0-de61-45f1-b526-98c183f6869f",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "9739f94e-8be9-491c-bbdf-e4c69334fb62",
+      "id" : "2fa974ab-19e0-449f-b85e-240afb7ec9bf",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
