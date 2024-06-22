@@ -209,7 +209,7 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_pAPCsC5hEe-SvPntKcWM0A" name="oportunidadeDeVenda" content="oportunidadeDeVenda" type="TYPE_VARIABLE" returnType="com.company.model.OportunidadeDeVenda">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mnr6IC5lEe-SvPntKcWM0A" name="oportunidadeDeVenda" dataType="_MJpipB0JEe-wwLkYj99nvQ" className="com.company.model.OportunidadeDeVenda"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_pAPCsS5hEe-SvPntKcWM0A" name="Estes sao os requisitos: vai dar uma volta" content="Estes sao os requisitos: vai dar uma volta"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_pAPCsS5hEe-SvPntKcWM0A" name="Estes sao os requisitos: teste teste" content="Estes sao os requisitos: teste teste"/>
             <operator xmi:type="expression:Operator" xmi:id="_pAPCsi5hEe-SvPntKcWM0A" type="JAVA_METHOD" expression="setRequisitos">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
@@ -226,7 +226,7 @@
             <condition xmi:type="expression:Expression" xmi:id="_WRNFoClcEe-TMIDnSmPP3w" name="7 Days 00:00:00" content="604800000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="__2UGKSJ6Ee-K9NOFx4MuYQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_GXw_kDDiEe-BQ93tMzjnrA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_NdasQDDlEe-BQ93tMzjnrA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="__2UGKCJ6Ee-K9NOFx4MuYQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="__2UGKyJ6Ee-K9NOFx4MuYQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -333,9 +333,7 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_YqRZgTDVEe-1LbipnKYqtw" name="respostaFornecedor" content="respostaFornecedor" type="TYPE_VARIABLE" returnType="com.company.model.Fornecedor">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ZEEZkDDVEe-1LbipnKYqtw" name="respostaFornecedor" dataType="_MJpipB0JEe-wwLkYj99nvQ" className="com.company.model.Fornecedor"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_YqRZgjDVEe-1LbipnKYqtw" name="newScript()" content="emailMessage.message" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dk0A4DDVEe-1LbipnKYqtw" name="emailMessage" dataType="_MJpipB0JEe-wwLkYj99nvQ" className="com.company.model.EmailMessage"/>
-            </rightOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_YqRZgjDVEe-1LbipnKYqtw" name="newScript()" content="'preco: teste, prazo: 23 dias'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
             <operator xmi:type="expression:Operator" xmi:id="_YqRZgzDVEe-1LbipnKYqtw" type="JAVA_METHOD" expression="setResposta">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
@@ -349,7 +347,7 @@
             <condition xmi:type="expression:Expression" xmi:id="_mr0IECPkEe-u9q7LyKFNBA" name="7 Days 00:00:00" content="604800000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_iVtSgiJ7Ee-K9NOFx4MuYQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_GXw_kTDiEe-BQ93tMzjnrA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_NdasQTDlEe-BQ93tMzjnrA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_iVtSgSJ7Ee-K9NOFx4MuYQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_iVtShCJ7Ee-K9NOFx4MuYQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -911,7 +909,7 @@
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_MJpihB0JEe-wwLkYj99nvQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_GXw_kjDiEe-BQ93tMzjnrA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_NdasQjDlEe-BQ93tMzjnrA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_MJpihh0JEe-wwLkYj99nvQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_MJpihx0JEe-wwLkYj99nvQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -1089,42 +1087,6 @@
         <value xmi:type="expression:Expression" xmi:id="_MJpimx0JEe-wwLkYj99nvQ" content="" returnTypeFixed="true"/>
       </searchIndexes>
     </elements>
-    <elements xmi:type="process:Pool" xmi:id="_uad6UCJ6Ee-K9NOFx4MuYQ" name="Pool1">
-      <formMapping xmi:type="process:FormMapping" xmi:id="_ufT-ECJ6Ee-K9NOFx4MuYQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_GYq-gDDiEe-BQ93tMzjnrA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
-      </formMapping>
-      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_ufT-EiJ6Ee-K9NOFx4MuYQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_ufT-EyJ6Ee-K9NOFx4MuYQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
-      </overviewFormMapping>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_4HA_ICmAEe-Q4N-lG7hnAQ" name="Production" version="8" username="william.jobs">
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_4HA_ISmAEe-Q4N-lG7hnAQ" id="CONNECTOR"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_4HA_IimAEe-Q4N-lG7hnAQ" id="GROOVY_SCRIPT"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_4HA_IymAEe-Q4N-lG7hnAQ" id="ACTOR_FILTER"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_4HA_JCmAEe-Q4N-lG7hnAQ" id="OTHER"/>
-        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_4HA_JSmAEe-Q4N-lG7hnAQ" id="GROOVY_SCRIPT"/>
-      </configurations>
-      <contract xmi:type="process:Contract" xmi:id="_ufT-FCJ6Ee-K9NOFx4MuYQ"/>
-      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_ufMpUCJ6Ee-K9NOFx4MuYQ">
-        <name xmi:type="expression:Expression" xmi:id="_ufMpUSJ6Ee-K9NOFx4MuYQ" content="" returnTypeFixed="true"/>
-        <value xmi:type="expression:Expression" xmi:id="_ufMpUiJ6Ee-K9NOFx4MuYQ" content="" returnTypeFixed="true"/>
-      </searchIndexes>
-      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_ufMpUyJ6Ee-K9NOFx4MuYQ">
-        <name xmi:type="expression:Expression" xmi:id="_ufMpVCJ6Ee-K9NOFx4MuYQ" content="" returnTypeFixed="true"/>
-        <value xmi:type="expression:Expression" xmi:id="_ufMpVSJ6Ee-K9NOFx4MuYQ" content="" returnTypeFixed="true"/>
-      </searchIndexes>
-      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_ufMpViJ6Ee-K9NOFx4MuYQ">
-        <name xmi:type="expression:Expression" xmi:id="_ufMpVyJ6Ee-K9NOFx4MuYQ" content="" returnTypeFixed="true"/>
-        <value xmi:type="expression:Expression" xmi:id="_ufMpWCJ6Ee-K9NOFx4MuYQ" content="" returnTypeFixed="true"/>
-      </searchIndexes>
-      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_ufMpWSJ6Ee-K9NOFx4MuYQ">
-        <name xmi:type="expression:Expression" xmi:id="_ufMpWiJ6Ee-K9NOFx4MuYQ" content="" returnTypeFixed="true"/>
-        <value xmi:type="expression:Expression" xmi:id="_ufMpWyJ6Ee-K9NOFx4MuYQ" content="" returnTypeFixed="true"/>
-      </searchIndexes>
-      <searchIndexes xmi:type="process:SearchIndex" xmi:id="_ufMpXCJ6Ee-K9NOFx4MuYQ">
-        <name xmi:type="expression:Expression" xmi:id="_ufMpXSJ6Ee-K9NOFx4MuYQ" content="" returnTypeFixed="true"/>
-        <value xmi:type="expression:Expression" xmi:id="_ufMpXiJ6Ee-K9NOFx4MuYQ" content="" returnTypeFixed="true"/>
-      </searchIndexes>
-    </elements>
     <datatypes xmi:type="process:BooleanType" xmi:id="_MJpinB0JEe-wwLkYj99nvQ" name="Boolean"/>
     <datatypes xmi:type="process:DateType" xmi:id="_MJpinR0JEe-wwLkYj99nvQ" name="Date"/>
     <datatypes xmi:type="process:IntegerType" xmi:id="_MJpinh0JEe-wwLkYj99nvQ" name="Integer"/>
@@ -1136,15 +1098,6 @@
     <datatypes xmi:type="process:BusinessObjectType" xmi:id="_MJpipB0JEe-wwLkYj99nvQ" name="Business_Object"/>
   </process:MainProcess>
   <notation:Diagram xmi:id="_MJpipR0JEe-wwLkYj99nvQ" type="Process" element="_MJpicB0JEe-wwLkYj99nvQ" name="MyDiagram" measurementUnit="Pixel">
-    <children xmi:type="notation:Node" xmi:id="_uf07cCJ6Ee-K9NOFx4MuYQ" type="2007" element="_uad6UCJ6Ee-K9NOFx4MuYQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_uf2JkCJ6Ee-K9NOFx4MuYQ" type="5008"/>
-      <children xmi:type="notation:DecorationNode" xmi:id="_uf2woCJ6Ee-K9NOFx4MuYQ" type="7001"/>
-      <styles xmi:type="notation:DescriptionStyle" xmi:id="_uf07cSJ6Ee-K9NOFx4MuYQ"/>
-      <styles xmi:type="notation:FontStyle" xmi:id="_uf07ciJ6Ee-K9NOFx4MuYQ" fontName="Segoe UI"/>
-      <styles xmi:type="notation:LineStyle" xmi:id="_uf07cyJ6Ee-K9NOFx4MuYQ"/>
-      <styles xmi:type="notation:FillStyle" xmi:id="_uf2woSJ6Ee-K9NOFx4MuYQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uf07dCJ6Ee-K9NOFx4MuYQ" width="1470" height="250"/>
-    </children>
     <children xmi:type="notation:Node" xmi:id="_MJpiph0JEe-wwLkYj99nvQ" type="2007" element="_MJpicR0JEe-wwLkYj99nvQ">
       <children xmi:type="notation:DecorationNode" xmi:id="_MJpipx0JEe-wwLkYj99nvQ" type="5008"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_MJpiqB0JEe-wwLkYj99nvQ" type="7001">
