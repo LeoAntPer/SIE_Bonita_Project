@@ -226,7 +226,7 @@
             <condition xmi:type="expression:Expression" xmi:id="_WRNFoClcEe-TMIDnSmPP3w" name="7 Days 00:00:00" content="604800000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="__2UGKSJ6Ee-K9NOFx4MuYQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_M2IyMDDXEe-1LbipnKYqtw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_GXw_kDDiEe-BQ93tMzjnrA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="__2UGKCJ6Ee-K9NOFx4MuYQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="__2UGKyJ6Ee-K9NOFx4MuYQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -349,7 +349,7 @@
             <condition xmi:type="expression:Expression" xmi:id="_mr0IECPkEe-u9q7LyKFNBA" name="7 Days 00:00:00" content="604800000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_iVtSgiJ7Ee-K9NOFx4MuYQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_M2IyMTDXEe-1LbipnKYqtw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_GXw_kTDiEe-BQ93tMzjnrA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_iVtSgSJ7Ee-K9NOFx4MuYQ"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_iVtShCJ7Ee-K9NOFx4MuYQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -629,10 +629,10 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_38opOzDVEe-1LbipnKYqtw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <filters xmi:type="process:ActorFilter" xmi:id="_xHQpACKAEe-hF5ts4rL8SA" name="Utilizador que concebe a solução" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
-          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_xHQpASKAEe-hF5ts4rL8SA" definitionId="bonita-actorfilter-initiator" version="1.0">
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_xHQpAiKAEe-hF5ts4rL8SA" key="autoAssign">
-              <expression xmi:type="expression:Expression" xmi:id="_xHQpAyKAEe-hF5ts4rL8SA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <filters xmi:type="process:ActorFilter" xmi:id="_UZt0MDDeEe-BQ93tMzjnrA" name="Utilizador que concebe a solução" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_UZt0MTDeEe-BQ93tMzjnrA" definitionId="bonita-actorfilter-initiator" version="1.0">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_UZt0MjDeEe-BQ93tMzjnrA" key="autoAssign">
+              <expression xmi:type="expression:Expression" xmi:id="_UZt0MzDeEe-BQ93tMzjnrA" name="true" content="true" returnType="java.lang.Boolean"/>
             </parameters>
           </configuration>
         </filters>
@@ -776,13 +776,6 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_0eJblh26Ee-gZr0NkXqK5g" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <filters xmi:type="process:ActorFilter" xmi:id="_2Q-74CKAEe-hF5ts4rL8SA" name="Utilizador que apoia na concessão da solução" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
-          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_2Q-74SKAEe-hF5ts4rL8SA" definitionId="bonita-actorfilter-initiator" version="1.0">
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2Q-74iKAEe-hF5ts4rL8SA" key="autoAssign">
-              <expression xmi:type="expression:Expression" xmi:id="_2Q-74yKAEe-hF5ts4rL8SA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-            </parameters>
-          </configuration>
-        </filters>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_VTusYB0JEe-wwLkYj99nvQ" name="Serviços de Apoio ao Negócio (área logística)" actor="_NiFgUCKAEe-hF5ts4rL8SA">
         <elements xmi:type="process:Task" xmi:id="_7W0ZAB25Ee-gZr0NkXqK5g" name="Apoio na coordenação de recursos (logistica)" outgoing="_AscZ4R26Ee-gZr0NkXqK5g" incoming="_Ca_U8C2VEe-1jpJFqdf7Ng" overrideActorsOfTheLane="false">
@@ -839,13 +832,6 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_7W2OMB25Ee-gZr0NkXqK5g" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <filters xmi:type="process:ActorFilter" xmi:id="_9vfU0CKAEe-hF5ts4rL8SA" name="Utilizador que fornece recursos para a solução" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
-          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_9vfU0SKAEe-hF5ts4rL8SA" definitionId="bonita-actorfilter-initiator" version="1.0">
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_9vfU0iKAEe-hF5ts4rL8SA" key="autoAssign">
-              <expression xmi:type="expression:Expression" xmi:id="_9vfU0yKAEe-hF5ts4rL8SA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-            </parameters>
-          </configuration>
-        </filters>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_Vkvj4B0JEe-wwLkYj99nvQ" name="Serviços de Apoio ao Negócio (área comercial)" actor="_VVkDsCKAEe-hF5ts4rL8SA">
         <elements xmi:type="process:Task" xmi:id="_BTrZAB26Ee-gZr0NkXqK5g" name="Apoio na coordenação de recursos (comercial)" outgoing="_IQ1YYB26Ee-gZr0NkXqK5g" incoming="_AscZ4R26Ee-gZr0NkXqK5g" overrideActorsOfTheLane="false">
@@ -902,13 +888,6 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_BTsAGx26Ee-gZr0NkXqK5g" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <filters xmi:type="process:ActorFilter" xmi:id="_-18mkCKAEe-hF5ts4rL8SA" name="Utilizador que fornece recursos para a solução" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
-          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_-18mkSKAEe-hF5ts4rL8SA" definitionId="bonita-actorfilter-initiator" version="1.0">
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-18mkiKAEe-hF5ts4rL8SA" key="autoAssign">
-              <expression xmi:type="expression:Expression" xmi:id="_-18mkyKAEe-hF5ts4rL8SA" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-            </parameters>
-          </configuration>
-        </filters>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_1pDqkCliEe-hQaEMBNGyoA" name="oportunidadeDeVenda" dataType="_MJpipB0JEe-wwLkYj99nvQ" className="com.company.model.OportunidadeDeVenda">
         <defaultValue xmi:type="expression:Expression" xmi:id="_1pDqkSliEe-hQaEMBNGyoA" name="OportunidadeDeVenda.findByPersistenceId" content="SELECT o&#xA;FROM OportunidadeDeVenda o&#xA;WHERE o.persistenceId= :persistenceId&#xA;" interpreter="GROOVY" type="TYPE_QUERY_BUSINESS_DATA" returnType="com.company.model.OportunidadeDeVenda">
@@ -932,7 +911,7 @@
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_MJpihB0JEe-wwLkYj99nvQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_M2IyMjDXEe-1LbipnKYqtw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_GXw_kjDiEe-BQ93tMzjnrA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_MJpihh0JEe-wwLkYj99nvQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_MJpihx0JEe-wwLkYj99nvQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -1112,7 +1091,7 @@
     </elements>
     <elements xmi:type="process:Pool" xmi:id="_uad6UCJ6Ee-K9NOFx4MuYQ" name="Pool1">
       <formMapping xmi:type="process:FormMapping" xmi:id="_ufT-ECJ6Ee-K9NOFx4MuYQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_M3YvYDDXEe-1LbipnKYqtw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_GYq-gDDiEe-BQ93tMzjnrA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_ufT-EiJ6Ee-K9NOFx4MuYQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_ufT-EyJ6Ee-K9NOFx4MuYQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
